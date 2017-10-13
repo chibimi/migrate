@@ -180,7 +180,7 @@ func parseConsistency(consistencyStr string) (consistency gocql.Consistency, err
 			}
 		}
 	}()
-	consistency = gocql.ParseConsistency(consistencyStr)
+	consistency, err = gocql.ParseConsistency(consistencyStr)
 
-	return consistency, nil
+	return consistency, err
 }
