@@ -9,12 +9,12 @@ import (
 	"testing"
 	// Ensure imports for each driver we wish to test
 
-	"github.com/gemnasium/migrate/driver"
-	_ "github.com/gemnasium/migrate/driver/cassandra"
-	_ "github.com/gemnasium/migrate/driver/postgres"
-	_ "github.com/gemnasium/migrate/driver/sqlite3"
-	"github.com/gemnasium/migrate/file"
-	"github.com/gemnasium/migrate/migrate/direction"
+	"github.com/chibimi/migrate/driver"
+	_ "github.com/chibimi/migrate/driver/cassandra"
+	_ "github.com/chibimi/migrate/driver/postgres"
+	_ "github.com/chibimi/migrate/driver/sqlite3"
+	"github.com/chibimi/migrate/file"
+	"github.com/chibimi/migrate/migrate/direction"
 )
 
 // Add Driver URLs here to test basic Up, Down, .. functions.

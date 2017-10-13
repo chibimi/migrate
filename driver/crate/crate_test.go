@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gemnasium/migrate/file"
-	"github.com/gemnasium/migrate/migrate/direction"
-	pipep "github.com/gemnasium/migrate/pipe"
+	"github.com/chibimi/migrate/file"
+	"github.com/chibimi/migrate/migrate/direction"
+	pipep "github.com/chibimi/migrate/pipe"
 )
 
 func TestContentSplit(t *testing.T) {

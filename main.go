@@ -1,6 +1,6 @@
 // Package main is the CLI.
 // You can use the CLI via Terminal.
-// import "github.com/gemnasium/migrate/migrate" for usage within Go.
+// import "github.com/chibimi/migrate/migrate" for usage within Go.
 package main
 
 import (
@@ -10,16 +10,16 @@ import (
 	"strconv"
 	"time"
 
+	_ "github.com/chibimi/migrate/driver/bash"
+	_ "github.com/chibimi/migrate/driver/cassandra"
+	_ "github.com/chibimi/migrate/driver/crate"
+	_ "github.com/chibimi/migrate/driver/postgres"
+	_ "github.com/chibimi/migrate/driver/sqlite3"
+	"github.com/chibimi/migrate/file"
+	"github.com/chibimi/migrate/migrate"
+	"github.com/chibimi/migrate/migrate/direction"
+	pipep "github.com/chibimi/migrate/pipe"
 	"github.com/fatih/color"
-	_ "github.com/gemnasium/migrate/driver/bash"
-	_ "github.com/gemnasium/migrate/driver/cassandra"
-	_ "github.com/gemnasium/migrate/driver/crate"
-	_ "github.com/gemnasium/migrate/driver/postgres"
-	_ "github.com/gemnasium/migrate/driver/sqlite3"
-	"github.com/gemnasium/migrate/file"
-	"github.com/gemnasium/migrate/migrate"
-	"github.com/gemnasium/migrate/migrate/direction"
-	pipep "github.com/gemnasium/migrate/pipe"
 )
 
 var url = flag.String("url", os.Getenv("MIGRATE_URL"), "")

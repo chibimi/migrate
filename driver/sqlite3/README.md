@@ -17,5 +17,5 @@ migrate help # for more info
 
 ## Authors
 
-* Matthias Kadenbach, https://github.com/gemnasium
+* Matthias Kadenbach, https://github.com/chibimi
 * Caesar Wirth, https://github.com/cjwirth
