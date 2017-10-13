@@ -11,7 +11,6 @@ import (
 
 	"github.com/gemnasium/migrate/driver"
 	_ "github.com/gemnasium/migrate/driver/cassandra"
-	_ "github.com/gemnasium/migrate/driver/mysql"
 	_ "github.com/gemnasium/migrate/driver/postgres"
 	_ "github.com/gemnasium/migrate/driver/sqlite3"
 	"github.com/gemnasium/migrate/file"
@@ -21,7 +20,6 @@ import (
 // Add Driver URLs here to test basic Up, Down, .. functions.
 var driverUrls = []string{
 	"postgres://postgres@" + os.Getenv("POSTGRES_PORT_5432_TCP_ADDR") + ":" + os.Getenv("POSTGRES_PORT_5432_TCP_PORT") + "/template1?sslmode=disable",
-	"mysql://root@tcp(" + os.Getenv("MYSQL_PORT_3306_TCP_ADDR") + ":" + os.Getenv("MYSQL_PORT_3306_TCP_PORT") + ")/migratetest",
 	"cassandra://" + os.Getenv("CASSANDRA_PORT_9042_TCP_ADDR") + ":" + os.Getenv("CASSANDRA_PORT_9042_TCP_PORT") + "/migrate?protocol=4",
 	"sqlite3:///tmp/migrate.db",
 }

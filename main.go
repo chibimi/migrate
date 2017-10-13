@@ -14,7 +14,6 @@ import (
 	_ "github.com/gemnasium/migrate/driver/bash"
 	_ "github.com/gemnasium/migrate/driver/cassandra"
 	_ "github.com/gemnasium/migrate/driver/crate"
-	_ "github.com/gemnasium/migrate/driver/mysql"
 	_ "github.com/gemnasium/migrate/driver/postgres"
 	_ "github.com/gemnasium/migrate/driver/sqlite3"
 	"github.com/gemnasium/migrate/file"
